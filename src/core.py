@@ -102,6 +102,5 @@ class Board:
         for x in range(-radius, radius):
             for y in range(-radius, radius):
                 for z in range(-radius, radius):
-                    if x + y + z == 0:
-                        tiles[(x, y, z)] = Tile(x, y, z, tile_type_collection.pop())
+                    tiles[(x, y, z)] = Tile(x, y, z, tile_type_collection.pop())
         return tiles
